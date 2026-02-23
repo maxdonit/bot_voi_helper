@@ -1,0 +1,5 @@
+{
+  "name": "VOI Helper Telegram Bot",
+  "description": "Telegram bot integrated with voi_helper AI assistant for disability documentation and support.",
+  "requestFramePermissions": []
+}
