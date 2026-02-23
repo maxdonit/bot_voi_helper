@@ -1,0 +1,13 @@
+services:
+  voi-bot:
+    build: .
+    container_name: voi_helper_bot
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - VOI_API_URL=${VOI_API_URL}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - APP_URL=${APP_URL}
+    restart: always
